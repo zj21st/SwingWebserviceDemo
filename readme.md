@@ -1,9 +1,9 @@
-ÍÅ¶Ó¼´½«½ÓÊÖÒ»¸ö¹ÅÀÏµÄ²úÆ·ÏßÎ¬»¤£¬»ØÏëÁËÊ®¼¸ÄêÇ°×÷¹ıµÄÏîÄ¿£¬Ğ´ÁËÒ»¸öJava Swing ºÍ WebServiceµÄÀı×Ó
+## å›¢é˜Ÿå³å°†æ¥æ‰‹ä¸€ä¸ªå¤è€çš„äº§å“çº¿ç»´æŠ¤ï¼Œå›æƒ³äº†åå‡ å¹´å‰ä½œè¿‡çš„é¡¹ç›®ï¼Œå†™äº†ä¸€ä¸ªJava Swing å’Œ WebServiceçš„ä¾‹å­
 
-1\swingµÄ²Î¿¼À´Ô´£ºhttps://blog.csdn.net/gp3056/article/details/70226655
-2\Webservice²Î¿¼À´Ô´:https://blog.csdn.net/GoGleTech/article/details/78616121
+## 1\swingçš„å‚è€ƒæ¥æºï¼šhttps://blog.csdn.net/gp3056/article/details/70226655
+## 2\Webserviceå‚è€ƒæ¥æº:https://blog.csdn.net/GoGleTech/article/details/78616121
 
-²½Öè
-1¡¢Æô¶¯webserviceÏÂµÄHelloWebservice
-2¡¢¸ù¾İwsdlÃèÊöÎÄ¼ş£¬ÓÃÃüÁîĞĞÉú³É¿Í»§¶ËÒıÓÃÀà:  wsimport -s . -p client http://localhost:456/helloWord?wsdl
-3¡¢°ÑÉú³ÉµÄ¿Í»§¶ËÒıÓÃÀà·ÅÈëclient°üÖĞ£¬Æô¶¯Calc
+# æ­¥éª¤
+## 1ã€å¯åŠ¨webserviceä¸‹çš„HelloWebservice
+## 2ã€æ ¹æ®wsdlæè¿°æ–‡ä»¶ï¼Œç”¨å‘½ä»¤è¡Œç”Ÿæˆå®¢æˆ·ç«¯å¼•ç”¨ç±»:  wsimport -s . -p client http://localhost:456/helloWord?wsdl
+## 3ã€æŠŠç”Ÿæˆçš„å®¢æˆ·ç«¯å¼•ç”¨ç±»æ”¾å…¥clientåŒ…ä¸­ï¼Œå¯åŠ¨Calc
