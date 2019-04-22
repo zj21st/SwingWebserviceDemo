@@ -73,7 +73,7 @@ public class Calc extends JFrame{
 	
 	private void bottomSurface(JTextField jtf,JComboBox status){
 		JPanel bottomPanel = new JPanel();
-		bottomPanel.setBounds(8,100,270,250);
+		bottomPanel.setBounds(8,110,270,250);
 		bottomPanel.setLayout(new GridLayout(5,4,10,10));
 		
 		String[] buttonValue = {"1","2","3","C",
