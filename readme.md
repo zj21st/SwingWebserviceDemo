@@ -7,5 +7,5 @@
 
 ## 步骤
 ### 1、启动webservice下的ServerMain
-### 2、根据wsdl描述文件，用命令行生成客户端引用类:  wsimport -s . -p client.ejb http://localhost:456/runCal?wsdl
+### 2、根据wsdl描述文件，用命令行生成客户端引用类:  wsimport -s . -p client.wsdl http://localhost:456/runCal?wsdl
 ### 3、把生成的客户端引用类放入client.ejb 包中，启动ClientMain

@@ -1,5 +1,5 @@
 
-package client.ejb;
+package client.wsdl;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

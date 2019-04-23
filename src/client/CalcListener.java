@@ -11,8 +11,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 
-import client.ejb.ServerMain;
-import client.ejb.ServerMainService;
+import client.wsdl.ServerMain;
+import client.wsdl.ServerMainService;
 
  
 /**

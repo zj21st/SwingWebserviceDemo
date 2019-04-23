@@ -1,5 +1,5 @@
 
-package client.ejb;
+package client.wsdl;
 
 import java.net.MalformedURLException;
 import java.net.URL;

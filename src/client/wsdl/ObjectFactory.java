@@ -1,5 +1,5 @@
 
-package client.ejb;
+package client.wsdl;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
