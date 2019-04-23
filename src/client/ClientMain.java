@@ -18,7 +18,7 @@ import javax.swing.UIManager;
  * @author Administrator
  *
  */
-public class Calc extends JFrame{
+public class ClientMain extends JFrame{
 	private void initFrame() {
 		try {
 			String lookAndFeel ="com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel";
@@ -99,7 +99,7 @@ public class Calc extends JFrame{
 
 	
 	public static void main(String[] args) {
-		Calc calc = new Calc();
+		ClientMain calc = new ClientMain();
 		calc.initFrame();
 	}
 }

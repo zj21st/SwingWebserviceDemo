@@ -4,6 +4,6 @@
 ### 2\Webservice参考来源:https://blog.csdn.net/GoGleTech/article/details/78616121
 
 ## 步骤
-### 1、启动webservice下的HelloWebservice
-### 2、根据wsdl描述文件，用命令行生成客户端引用类:  wsimport -s . -p client http://localhost:456/helloWord?wsdl
-### 3、把生成的客户端引用类放入client包中，启动Calc
+### 1、启动webservice下的ServerMain
+### 2、根据wsdl描述文件，用命令行生成客户端引用类:  wsimport -s . -p client.ejb http://localhost:456/runCal?wsdl
+### 3、把生成的客户端引用类放入client.ejb 包中，启动ClientMain

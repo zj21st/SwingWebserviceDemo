@@ -10,6 +10,10 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
+
+import client.ejb.ServerMain;
+import client.ejb.ServerMainService;
+
  
 /**
  * 处理计算器逻辑运算
@@ -73,9 +77,10 @@ public class CalcListener implements ActionListener {
 			if (calType.getSelectedIndex() ==  0){
 				 rs = CalLogic.run(content);
 			}else {
-				HelloWebServiceService hwss = new HelloWebServiceService(); 
-			     HelloWebService hws = hwss.getHelloWebServicePort();
-			      rs=hws.helloWord(content); 
+				ServerMainService hwss = new ServerMainService(); 
+			     //HelloWebService hws = hwss.getHelloWebServicePort();
+			     ServerMain hws = hwss.getServerMainPort();
+			      rs=hws.runCal(content); 
 			}  
 		     
 			jtf.setText(String.valueOf(rs));
