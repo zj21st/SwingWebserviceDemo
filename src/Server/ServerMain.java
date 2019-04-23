@@ -3,8 +3,8 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;  
 import javax.xml.ws.Endpoint;  
 /** 
- *  @WebService £­ ËüÊÇÒ»¸ö×¢½â£¬ÓÃÔÚÀàÉÏÖ¸¶¨½«´ËÀà·¢²¼³ÉÒ»¸öws. 
-    Endpoint ¨C ´ËÀàÎª¶Ëµã·şÎñÀà£¬ËüµÄ·½·¨publishÓÃÓÚ½«Ò»¸öÒÑ¾­Ìí¼ÓÁË@WebService×¢½â¶ÔÏó°ó¶¨µ½Ò»¸öµØÖ·µÄ¶Ë¿ÚÉÏ¡£ 
+ *  @WebService ï¼ å®ƒæ˜¯ä¸€ä¸ªæ³¨è§£ï¼Œç”¨åœ¨ç±»ä¸ŠæŒ‡å®šå°†æ­¤ç±»å‘å¸ƒæˆä¸€ä¸ªws. 
+    Endpoint â€“ æ­¤ç±»ä¸ºç«¯ç‚¹æœåŠ¡ç±»ï¼Œå®ƒçš„æ–¹æ³•publishç”¨äºå°†ä¸€ä¸ªå·²ç»æ·»åŠ äº†@WebServiceæ³¨è§£å¯¹è±¡ç»‘å®šåˆ°ä¸€ä¸ªåœ°å€çš„ç«¯å£ä¸Šã€‚ 
 
  * @author xuemin 
  * 
@@ -13,27 +13,27 @@ import javax.xml.ws.Endpoint;
 public class ServerMain {  
 
 		public String runCal(String command){  
-			System.out.println("Ô¶³Ì·şÎñ½ÓÊÕµ½ÇëÇó:"+command);
+			System.out.println("è¿œç¨‹æœåŠ¡æ¥æ”¶åˆ°è¯·æ±‚:"+command);
 			return CalLogic.run(command);  
 		}  
 
 			/** 
-			 *Ìí¼Óexclude=trueºó£¬HelloWord2()·½·¨²»»á±»·¢²¼ 
+			 *æ·»åŠ exclude=trueåï¼ŒHelloWord2()æ–¹æ³•ä¸ä¼šè¢«å‘å¸ƒ 
 			 * @param name 
 			 * @return 
 			 */  
 			@WebMethod(exclude=true)  
 			public String HelloWord2(String name){  
-				return "½ÓÊÕµ½ÇëÇó: "+name+"HelloWord2";  
+				return "æ¥æ”¶åˆ°è¯·æ±‚: "+name+"HelloWord2";  
 			}  
 			
 		public static void main(String[] args) {  
 		/** 
-		 *²ÎÊı1£º·şÎñµÄ·¢²¼µØÖ· 
-		 *²ÎÊı2£º·şÎñµÄÊµÏÖÕß 
+		 *å‚æ•°1ï¼šæœåŠ¡çš„å‘å¸ƒåœ°å€ 
+		 *å‚æ•°2ï¼šæœåŠ¡çš„å®ç°è€… 
 		 */  
 		Endpoint.publish("http://localhost:456/runCal",new ServerMain());  
-		System.out.println("·şÎñÆô¶¯:http://localhost:456/runCal?wsdl");
+		System.out.println("æœåŠ¡å¯åŠ¨:http://localhost:456/runCal?wsdl");
 		
 		}  
 }

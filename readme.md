@@ -1,4 +1,6 @@
  团队即将接手一个古老的产品线维护，回想了十几年前作过的项目，写了一个Java Swing 和 WebService的例子
+ 
+项目字符集：GBK
 
 ### 1\swing的参考来源：https://blog.csdn.net/gp3056/article/details/70226655
 ### 2\Webservice参考来源:https://blog.csdn.net/GoGleTech/article/details/78616121

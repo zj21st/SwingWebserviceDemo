@@ -1,7 +1,7 @@
 package client;
 /**
  * @author
- * @vision createtime:2016ÉÏÎç11:42:00
+ * @vision createtime:2016ä¸Šåˆ11:42:00
  */
 
  
@@ -16,15 +16,15 @@ import client.ejb.ServerMainService;
 
  
 /**
- * ´¦Àí¼ÆËãÆ÷Âß¼­ÔËËã
+ * å¤„ç†è®¡ç®—å™¨é€»è¾‘è¿ç®—
  * 
  * @author Administrator
  *
  */
 public class CalcListener implements ActionListener {
 	private JTextField jtf;
-	private JComboBox calType;//0±¾µØ¼ÆËã 1Ô¶³Ì¼ÆËã
-	// ´´½¨×Ö·û»º³åÇøÓò
+	private JComboBox calType;//0æœ¬åœ°è®¡ç®— 1è¿œç¨‹è®¡ç®—
+	// åˆ›å»ºå­—ç¬¦ç¼“å†²åŒºåŸŸ
 	String content = "";
 	private StringBuffer sb = new StringBuffer();
  
@@ -37,7 +37,7 @@ public class CalcListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		String command = e.getActionCommand();
 		switch (command) {
-		// caseÍ¬Ê±Ğ´¶à¸öÌõ¼ş£¬Êı×ÖµÄ»ù±¾´¦Àí
+		// caseåŒæ—¶å†™å¤šä¸ªæ¡ä»¶ï¼Œæ•°å­—çš„åŸºæœ¬å¤„ç†
 		case "1":
 		case "2":
 		case "3":
@@ -58,19 +58,19 @@ public class CalcListener implements ActionListener {
 			jtf.setText(sb.toString().trim());
 			break;
  
-		// Çå¿ÕÊäÈë¿òÖĞÄÚÈİ
+		// æ¸…ç©ºè¾“å…¥æ¡†ä¸­å†…å®¹
 		case "C":
 		case "CE":
-			// Çå¿ÕStringBuffer
+			// æ¸…ç©ºStringBuffer
 			sb.setLength(0);
 			jtf.setText("0");
 			break;
  
-		// ÍË¸ñ
-		case "¡û":
+		// é€€æ ¼
+		case "â†":
 			break;
  
-		// ËÄÔòÔËËã´¦Àí ´¦ÀíÁ½¸öÔËËã·ûÎÊÌâÁ½¸öµã TODO
+		// å››åˆ™è¿ç®—å¤„ç† å¤„ç†ä¸¤ä¸ªè¿ç®—ç¬¦é—®é¢˜ä¸¤ä¸ªç‚¹ TODO
 		case "=":
 			String content = jtf.getText();
 			String rs = "";

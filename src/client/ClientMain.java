@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
  
 /**
- * ´¦Àí¼ÆËãÆ÷½çÃæ
+ * å¤„ç†è®¡ç®—å™¨ç•Œé¢
  * @author Administrator
  *
  */
@@ -32,7 +32,7 @@ public class ClientMain extends JFrame{
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(null);
-		// JTextFieldµ÷ÓÃ·½·¨Ê±´«µİ
+		// JTextFieldè°ƒç”¨æ–¹æ³•æ—¶ä¼ é€’
 		JTextField jtf = this.topSurface();
 
 /*		JPanel CalPanel = new JPanel();
@@ -44,8 +44,8 @@ public class ClientMain extends JFrame{
 		JPanel CalPanel = new JPanel();
 		CalPanel.setBounds(0,60,300,50);		
 		JComboBox status = new JComboBox();
-		status.addItem("±¾µØ¼ÆËã");
-		status.addItem("Ô¶³Ì¼ÆËã");
+		status.addItem("æœ¬åœ°è®¡ç®—");
+		status.addItem("è¿œç¨‹è®¡ç®—");
 		CalPanel.add(status);
 		
 		
@@ -59,7 +59,7 @@ public class ClientMain extends JFrame{
 		JPanel topPanel = new JPanel();
 		topPanel.setBounds(-5,10,300,50);
 		JTextField jtf = new JTextField(16);
-		// ÉèÖÃÎÄ¼şÓÒ±ßÍù×ó±ßÊä³ö
+		// è®¾ç½®æ–‡ä»¶å³è¾¹å¾€å·¦è¾¹è¾“å‡º
 		jtf.setHorizontalAlignment(JTextField.RIGHT);
 		jtf.setForeground(Color.red);
 		jtf.setFont(new Font("SansSerif",Font.PLAIN,20));
@@ -78,15 +78,15 @@ public class ClientMain extends JFrame{
 		
 		String[] buttonValue = {"1","2","3","C",
 								"4","5","6","CE",
-								"7","8","9","¡û",
+								"7","8","9","â†",
 								"+","-","0",".",
 								"*","/","%","="};
-		// ¼àÌıÆ÷²»ÄÜÖØ¸´´´½¨
+		// ç›‘å¬å™¨ä¸èƒ½é‡å¤åˆ›å»º
 		CalcListener cl = new CalcListener(jtf,status);
 		for (int i = 0; i < buttonValue.length; i++) {
 			JButton button = new JButton(buttonValue[i]);
 			button.setBorder(BorderFactory.createRaisedBevelBorder());
-			button.setFont(new Font("ËÎÌå", 0, 25));
+			button.setFont(new Font("å®‹ä½“", 0, 25));
 			button.setForeground(Color.blue);
 			bottomPanel.add(button);
 			button.addActionListener(cl);
